@@ -1,0 +1,11 @@
+.app {
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  border: 2px solid rgb(204, 241, 40);
+  border-radius: 20px;
+}
+
+.app__title {
+  text-align: center;
+}

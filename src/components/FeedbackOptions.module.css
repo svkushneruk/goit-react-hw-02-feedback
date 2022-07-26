@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.list__btn {
+  padding: 5px 15px;
+  cursor: pointer;
+}

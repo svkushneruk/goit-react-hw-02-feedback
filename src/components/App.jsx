@@ -31,7 +31,7 @@ class App extends Component {
       <div className={css.app}>
         <h1 className={css.app__title}>Cafe Expresso</h1>
         <Section title="Please leave feedback">
-          <FeedbackOptions options={3} onLeaveFeedback={this.hendleClick} />
+          <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={this.hendleClick} />
         </Section>
 
         <Section title="Statistics">

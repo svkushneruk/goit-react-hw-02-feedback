@@ -7,4 +7,5 @@
 .list__btn {
   padding: 5px 15px;
   cursor: pointer;
+  text-transform: capitalize;
 }

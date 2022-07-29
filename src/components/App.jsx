@@ -20,10 +20,9 @@ class App extends Component {
     return Math.round((this.state.good / this.countTotalFeedback()) * 100);
   };
 
-  hendleClick = e => {
-    const changingFeedback = e.target.textContent.toLowerCase();
+  handleClick = option => {
     this.setState(prevState => ({
-      [changingFeedback]: prevState[changingFeedback] + 1,
+      [option]: prevState[option] + 1,
     }));
   };
   render() {
@@ -31,7 +30,7 @@ class App extends Component {
       <div className={css.app}>
         <h1 className={css.app__title}>Cafe Expresso</h1>
         <Section title="Please leave feedback">
-          <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={this.hendleClick} />
+          <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={this.handleClick} />
         </Section>
 
         <Section title="Statistics">
